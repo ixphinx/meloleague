@@ -7,6 +7,16 @@ const Data = new Schema({
     ipart:String,
     iparc:String,
     
+    /*---- Cuentas de Usuarios ----*/
+    user: String,
+    password: String,
+    username: String,
+    userlastname: String,
+    userci: String,
+    aproved: Boolean,
+    usertype: String,
+    
+    
     /*----- Noticias---- */
     noticias:String,
 
@@ -15,17 +25,29 @@ const Data = new Schema({
     combody: String,
     comhead1: String,
     combody1: String,
+    
+     /*------ Backgrounds -----*/
+    backgrounda: String,
+    backgroundb: String,
+    backgroundc: String,
+    backgroundfem: String,
+    backgroundf:String,
 
     /*---- Jugadores ----- */
     jnombre: String,
     jimg: String,
+    jescudo: String,
     japellido: String,
     jcedula: String,
     jgenero: String,
-    jgoles: String,
-    jtarjetasam: String,
-    jtarjestasroj: String,
+    jgoles: Number,
+    jtarjetasam: Number,
+    jtarjetasdam: Number,
+    jtarjestasroj: Number,
     jamonestaciones: String,
+    jamonestacionid: String,
+    jfechaamonestacion: String,
+    jfechainicioamonestacion: String,
     jequipo: String,
     jdivision: String,
 
@@ -36,15 +58,15 @@ const Data = new Schema({
     edivision: String,
     edelegado: String,
     edelcedula: String,
-    epuntos: String,
-    epartidosj: String,
-    epartidosg: String,
-    epartidosempatados: String,
-    epartidosperdidos: String,
-    egolesmas: String,
-    egolesmenos: String,
-    esaldo: String,
-    efairplay: String,
+    epuntos: Number,
+    epartidosj: Number,
+    epartidosg: Number,
+    epartidosempatados: Number,
+    epartidosperdidos: Number,
+    egolesmas: Number,
+    egolesmenos: Number,
+    esaldo: Number,
+    efairplay: Number,
 
     /*------- Torneos ------*/
     tnombre: String,
@@ -101,7 +123,19 @@ const Data = new Schema({
     
     /*------ imagenes ----- */
     imgdiv: String,
-    imgurl: String
+    imgurl: String,
+    
+    /*------ Estadisticas ------*/
+    estIdPartido: String,
+    estIdEquipo: String,
+    estIdJugador: String,
+    estNombre: String,
+    estApellido: String,
+    estAmarilla: Number,
+    estDobAmarilla: Number,
+    estRoja: Number,
+    estGol: Number,
+    estAmonestacion: Number
 
 
 });
